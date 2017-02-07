@@ -1,0 +1,49 @@
+@font-face{ font-family: Bebas; src: url('fonts/BebasNeue.ttf');}
+
+body{
+    background-color:whitesmoke;
+}
+
+h1{
+    text-align: center;
+    color:indianred;
+    font-size: 600%;
+    
+}
+
+h1,h2,h3,p,ul,li,li a{
+    font-family: Bebas;
+}
+
+p center{
+    font-family: Bebas;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: indianred;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: whitesmoke;
+    font-size: 150%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: crimson;
+}
+
+.active{
+    background-color: darkred;
+}
