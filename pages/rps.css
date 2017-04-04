@@ -23,21 +23,21 @@ body {
   font-size: 1.6rem;
 }
 .main {
-  background-color: cornflowerblue;
+  background-color: whitesmoke;
 }
 .header {
-  background-color: #efefef;
+  background-color: cornflowerblue;
   border: 1px solid #efefef;
   border-bottom: 2px solid gainsboro;
 }
 .header h1 {
-  color: cornflowerblue;
+  color: whitesmoke;
 }
 .shoot {
-  color: #efefef;
+  color: cornflowerblue;
 }
 .shoot:hover {
-  color: cornflowerblue;
+  color: whitesmoke;
 }
 h1 span.rock {
   font-family: Bebas;
@@ -87,14 +87,14 @@ button.play.rock {
 }
 button.play.paper {
   background: #efefef url(../images/paper.png) no-repeat;
-  background-size: 175px 175px;
+  background-size: 170px 175px;
 }
 button.play.scissors {
   background: #efefef url(../images/scissors.png) no-repeat;
   background-size: 160px 175px;
 }
 button.play:hover {
-  border: 4px solid #00aae3;
+  border: 4px solid #cecdcd;
 }
 button#reset {
   font-family: Bebas;
@@ -111,7 +111,7 @@ h2#results {
 }
 p {
   font-family: Bebas;
-    color: azure;
+    color: cornflowerblue;
     font-size: 18px;
   font-size: 2.0 rem;
 }
@@ -136,7 +136,7 @@ span#wins {
 .score-divider span {
   font-size: 40px;
   font-size: 4rem;
-  color: #00aae3;
+  color: cornflowerblue;
   font-weight: 200;
 }
 div.score-num,
