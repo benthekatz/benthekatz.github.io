@@ -5,17 +5,15 @@
 }
 
 #header {
-    position: relative;
+    padding: 40px;
     top: -10px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 	height: 40px;
 }
 
 h1 {
     font-family: Bebas;
     color: black;
-    text-align: left;
+    text-indent: 20px;
 }
 
 form {
@@ -39,15 +37,12 @@ textarea {
 }
 
 #wrapper {
-    border-left: 1px solid #888;
-    border-right: 1px solid #888;
-    border-bottom: 1px solid #888;
-    position: relative;
+    
+    margin: 0 auto;
     top: -10px;
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 20px;
-    box-shadow: 3px 3px 3px #444;
     font-family: Verdana, Arial, sans-serif;
     font-size: 0.8em;
 }
