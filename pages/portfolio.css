@@ -1,0 +1,33 @@
+@font-face{ font-family: Bebas; src: url('../fonts/BebasNeue.ttf');}
+
+h1{
+    text-align: center;
+    color:indianred;
+    font-size: 800%;
+    font-family: Bebas;
+    height: 50px
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.images{
+    border: 10px solid indianred;
+    margin: auto;
+    max-width: 800px
+}
+
+.first{
+    padding-top: 20px;
+}
+
+.last{
+    padding-bottom: 20px;
+}
