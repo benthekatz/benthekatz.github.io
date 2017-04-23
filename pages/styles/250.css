@@ -1,4 +1,4 @@
-@font-face{ font-family: Bebas; src: url('../fonts/BebasNeue.ttf');}
+@font-face{ font-family: Bebas; src: url('../../fonts/BebasNeue.ttf');}
 
 body{
     background-color:whitesmoke;
@@ -28,6 +28,8 @@ p{
 
 th{
     font-family: Bebas;
+    text-align: left;
+    font-size: 120%
 }
 
 ul{
