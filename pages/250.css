@@ -45,6 +45,7 @@ li{
 
 li a{
     display: block;
+    border-left: 3px solid whitesmoke;
     color: whitesmoke;
     font-size: 150%;
     text-align: center;

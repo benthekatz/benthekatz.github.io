@@ -5,7 +5,7 @@ h1{
     color:indianred;
     font-size: 800%;
     font-family: Bebas;
-    height: 50px
+    height: 60px
 }
 
 body{
@@ -16,6 +16,38 @@ img{
     display: block;
     margin: 0 auto;
     padding: 20px
+}
+
+ul{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 90px;
+    overflow: hidden;
+    background-color: indianred;
+}
+
+li{
+    float: center;
+    font-family: Bebas;
+}
+
+li a{
+    display: block;
+    border-left: 3px solid whitesmoke;
+    color: whitesmoke;
+    font-size: 200%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: crimson;
+}
+
+.active{
+    background-color: darkred;
 }
 
 .images{
