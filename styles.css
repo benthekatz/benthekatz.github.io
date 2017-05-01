@@ -2,6 +2,7 @@
 
 body{
     background-color:whitesmoke;
+    font-family: Bebas;
 }
 
 h1{
@@ -9,10 +10,6 @@ h1{
     color:indianred;
     font-size: 900%;
     padding: 500;
-}
-
-h1,h2,h3,p,ul,li,li a{
-    font-family: Bebas;
 }
 
 p center{
@@ -45,6 +42,3 @@ li a:hover:not(.active){
     background-color: crimson;
 }
 
-.active{
-    background-color: darkred;
-}
