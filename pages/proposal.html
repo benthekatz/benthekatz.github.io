@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles/proposal.css">
+
+<head>
+  <title>411 Proposal</title>
+  <link rel="icon" href="../images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <h1>IST 411 Proposal</h1>
+    <h3>Benjamin Katz</h3>
+  </div>
+
+  <div id="blocktext">
+    <div id="buttons">
+      <center>
+        <a href="https://github.com/benthekatz/IST411-Individual-Project">GitHub Repository</a>
+        <a href="https://github.com/benthekatz/IST411-Individual-Project">Project Tags</a>
+      </center>
+    </div>
+    <center>
+      <h2><strong>Description:</strong></h2>
+    </center>
+    <p><span style="font-weight: 400;">A collaborative canvas where new additions are permanent. Users will be able to paint the canvas however they wish. Any contribution will remain on the canvas permanently, but can still be drawn over by another user. To combat malicious intent, (e.g. painting the entire canvas in a single color), users will be able to draw for a certain amount of time before receiving a timeout, preventing them from painting further. Once the timeout expires, the user will be able to access the canvas again and resume painting. </span></p>
+    <center>
+      <h2><strong>Design:</strong></h2>
+    </center>
+    <p><span style="font-weight: 400;">The creation of the canvas and subsequent mouse listeners will be handled with front-end technologies such as HTML5, CSS, Javascript, and jQuery. Frameworks that we have learned in class will be used as well, including Thymeleaf, Maven, and Spring MVC. Additionally, jCanvas, which is a jQuery plugin, could provide added functionality for the creation of canvas elements (such as circles, squares, arcs and lines). </span></p>
+    <p><span style="font-weight: 400;">A MySQL database will be used to store a list of users, and will help with handling the assigning of timeouts. Additionally, it may be used to store the current state of the canvas; which can be done by saving an image via the MySQL </span><em><span style="font-weight: 400;">longblob</span></em><span style="font-weight: 400;"> type. However, since the storage of images is not ideal in a database and could pose problems, an alternative would be to store the canvas screenshot(s) in project file system instead. </span></p>
+    <div id="table">
+      <table border="1" cellpadding="1">
+        <tbody>
+          <tr style="height: 41px;">
+            <td style="width: 16.3482%; height: 41px;">Use Case 1</td>
+            <td style="width: 83.4218%; height: 41px;">Artist paints on canvas</td>
+          </tr>
+          <tr style="height: 20px;">
+            <td style="width: 16.3482%; height: 20px;">Actor</td>
+            <td style="width: 83.4218%; height: 20px;">Artist</td>
+          </tr>
+          <tr style="height: 90px;">
+            <td style="width: 16.3482%; height: 90px;">Overview</td>
+            <td style="width: 83.4218%; height: 90px;">
+              <p>&nbsp;Artist has an account and attempts to paint on canvas. If no timeout is active, he is able to paint and does so for the allotted time. Once the "painting timer" ends, a new timeout is issued and he can no longer paint until said timeout resolves.</p>
+            </td>
+          </tr>
+          <tr style="height: 40px;">
+            <td style="width: 16.3482%; height: 40px;">Alternate Scenario 1</td>
+            <td style="width: 83.4218%; height: 40px;">If artist is not signed in, artist will be unable to paint on canvas, but can still view it. Artist logs in to gain access to the canvas.</td>
+          </tr>
+          <tr style="height: 100px;">
+            <td style="width: 16.3482%; height: 100.3px;">Alternate Scenario 2</td>
+            <td style="width: 83.4218%; height: 100.3px;">If a timeout is active, artist will be unable to log out or create a new account, and cannot make changes to the canvas. The canvas, however, is still viewable. Artist waits until the timeout resolves before being able to paint or do account-related actions.</td>
+          </tr>
+          <tr style="height: 20px;">
+            <td style="width: 16.3482%; height: 20px;">Preconditions</td>
+            <td style="width: 83.4218%; height: 20px;">Artist has an account, and timeout is false</td>
+          </tr>
+          <tr style="height: 20px;">
+            <td style="width: 16.3482%; height: 20px;">Postconditions</td>
+            <td style="width: 83.4218%; height: 20px;">Timeout is set to true once "painting timer" ends.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <center>
+      <h2><strong>Schedule:</strong></h2>
+    </center>
+    <p><span style="font-weight: 400;"><strong>Checkpoint 1:</strong> On the homepage, the canvas is fully operational and its features are implemented - user can draw and use canvas to their liking. Timeouts are not implemented.</span></p>
+    <p><span style="font-weight: 400;"><strong>Checkpoint 2:</strong> Create user classes and provide database functionality. An affiliated login page/modal will prompt the user to login or create an account before being able to change the canvas (it is still viewable, however). Added complexity on canvas with additional tools such as shape and line creation are apparent. </span></p>
+    <p><span style="font-weight: 400;"><strong>Checkpoint 3:</strong> Timeout functionality is implemented. Users will have a timeout length and id assigned to their accounts, preventing them from making changes to the canvas if a timeout is active. Additionally, users will only be able to draw on the canvas for a certain amount of time before receiving a timeout.</span></p>
+    <p><span style="font-weight: 400;"><strong>Final Project:</strong> User can easily log in or create an account in order to start drawing. Canvas is fully operational with useful tools (brush, square, circle, line, etc). User is only able to draw for a defined timespan before receiving a timeout. Canvas is still viewable if the timeout status is currently active; however, changes cannot be made until timeout resolves. Additional features are apparent - user can save an image of the canvas, for example.</span></p>
+    <h2>&nbsp;</h2>
+    <center>
+      <h2><strong>Justification:</strong></h2>
+    </center>
+    <p><span style="font-weight: 400;">The purpose of such a project would be to showcase a piece of artwork that is continuously evolving. It would be fascinating to observe a collection of contributions from multiple users and the interactions within - protecting your artwork if it has been tampered with, and expanding your own artwork, consuming others&rsquo; in the process if you so choose.</span></p>
+    <p><span style="font-weight: 400;">While brainstorming individual project ideas earlier in the semester, the basic canvas idea intrigued me. However, I wanted to take this idea a step further and create a playground where each contribution left a lasting mark. I honestly believe this will be a great way of showcasing my abilities, particularly by using my experience in front-end web development. As a design-oriented programmer, this canvas project would be a great way of demonstrating artistic expression within an intuitive and responsive final project. </span></p>
+  </div>
+</body>
+
+</html>

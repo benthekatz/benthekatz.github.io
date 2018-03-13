@@ -7,7 +7,7 @@ body{
 
 h1{
     text-align: center;
-    color:indianred;
+    color: indianred;
     font-size: 900%;
     padding: 500;
 }
@@ -16,9 +16,55 @@ p center{
     font-family: Bebas;
 }
 
+
+#taskbar {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#taskbar ul {
+	clear: left;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	text-align: center;
+}
+
+#taskbar ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: 50%;
+}
+
+#taskbar ul li a {
+	display: block;
+	margin: 1 0 0 1px;
+	padding: 14px 16px;
+	background: indianred;
+	border-left: 3px solid whitesmoke;
+	color: whitesmoke;
+	text-decoration: none;
+	line-height: 1.3em;
+	font-size: 200%;
+}
+
+#taskbar ul li a:hover:not(.active){
+	background: crimson;
+}
+
+/*
 ul{
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     background-color: indianred;
@@ -41,4 +87,5 @@ li a{
 li a:hover:not(.active){
     background-color: crimson;
 }
+*/
 

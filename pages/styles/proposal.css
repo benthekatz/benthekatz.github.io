@@ -1,0 +1,38 @@
+#blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 140%;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 2px black;
+}
+
+#blocktext a {
+  padding: 10px;
+  color: whitesmoke;
+  background: dodgerblue;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px black;
+}
+
+#blocktext a:hover {
+  background: blue;
+}
+
+#header {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+  padding-bottom: none;
+  line-height: 15px;
+}
+
+#table td {
+  padding: 10px;
+}
+
+body {
+  background-color: dimgrey
+}
