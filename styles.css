@@ -1,91 +1,81 @@
-@font-face{ font-family: Bebas; src: url('fonts/BebasNeue.ttf');}
-
-body{
-    background-color:whitesmoke;
-    font-family: Bebas;
+@font-face {
+  font-family: Bebas;
+  src: url('fonts/BebasNeue.ttf');
 }
 
-h1{
-    text-align: center;
-    color: indianred;
-    font-size: 900%;
-    padding: 500;
+body {
+  background-color: whitesmoke;
+  font-family: Bebas;
 }
 
-p center{
-    font-family: Bebas;
+h1 {
+  position: absolute;
+  font-size: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: indianred;
 }
 
+img {
+  width: auto;
+}
+
+p center {
+  font-family: Bebas;
+}
+
+.container{
+  margin-top: 10vh;
+}
+
+#header{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
 
 #taskbar {
-	float: left;
-	width: 100%;
-	overflow: hidden;
-	position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
 }
 
 #taskbar ul {
-	clear: left;
-	float: left;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	left: 50%;
-	text-align: center;
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
 }
 
 #taskbar ul li {
-	display: block;
-	float: left;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	right: 50%;
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 50%;
 }
 
 #taskbar ul li a {
-	display: block;
-	margin: 1 0 0 1px;
-	padding: 14px 16px;
-	background: indianred;
-	border-left: 3px solid whitesmoke;
-	color: whitesmoke;
-	text-decoration: none;
-	line-height: 1.3em;
-	font-size: 200%;
+  display: block;
+  margin: 1 0 0 1px;
+  padding: 14px 16px;
+  background: indianred;
+  border-left: 3px solid whitesmoke;
+  color: whitesmoke;
+  text-decoration: none;
+  line-height: 1.3em;
+  font-size: 200%;
 }
 
-#taskbar ul li a:hover:not(.active){
-	background: crimson;
+#taskbar ul li a:hover:not(.active) {
+  background: crimson;
 }
-
-/*
-ul{
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: indianred;
-}
-
-li{
-    float: left;
-}
-
-li a{
-    display: block;
-    border-left: 3px solid whitesmoke;
-    color: whitesmoke;
-    font-size: 200%;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active){
-    background-color: crimson;
-}
-*/
-
