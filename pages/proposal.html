@@ -3,18 +3,19 @@
 <link rel="stylesheet" href="styles/proposal.css">
 
 <head>
-  <title>411 Proposal</title>
+  <title>IST411 Individual Project</title>
   <link rel="icon" href="../images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
+
   <div id="header">
-    <h1>IST 411 Proposal</h1>
+    <h1>IST 411 Checkpoint 1</h1>
     <h3>Benjamin Katz</h3>
   </div>
-
   <div id="blocktext">
+
     <div id="buttons">
       <center>
         <a href="https://github.com/benthekatz/IST411-Individual-Project">Project Repo</a>
@@ -23,6 +24,67 @@
         <a href="https://github.com/benthekatz/benthekatz.github.io/tags">Website Tags</a>
       </center>
     </div>
+
+    <center>
+      <h2 id="clarification">Clarification</h2>
+    </center>
+
+    <p>The purpose of this section is to clarify the questions and concerns that were asked about the project proposal (found below this section).</p>
+
+    <p><strong>Is there only one canvas at a time?</strong> Yes, the purpose of this project is to have a single, generative canvas. Users who access the website will essentially be interacting with the same canvas.</p>
+
+    <p><strong>Are you attempting to support as many users as there are?</strong> Discussed this idea of scalability briefly with Professor Reitter - while I would like to be able to accomodate as many potential users as there are, I believe a more reasonable goal within the bounds of this project deadline would be to accomodate, at most, a dozen users interacting with the same canvas.</p>
+
+    <p><strong>Can multiple users draw at the same time?</strong> This is a very good question and was not something I had considered during my initial stages of planning. After doing some research, I believe it to be something that can be accomplished later on in my project. I have reflected this by <em>adding</em> a requirement to the <em>Final Project</em> stage of my project.</p>
+
+    <p><strong>Are user accounts just for the ability to draw?</strong> In short, yes, but they provide more than that. Initially, this plan was established to prevent users from getting around timeouts - allowing them to draw continuously without penalty. Since a timeout is assigned to the account, the user would be unable to continue drawing. If it so happens that I find an easier method of handling timeouts for each artist, I will do so in lieu of a database of users. </p>
+
+    <center>
+      <h2 id="projectplan">Project Plan</h2>
+    </center>
+
+    <p><strong>✓ Checkpoint 1:</strong> <br /> ✓ On the homepage, the canvas is fully operational and its features are implemented - user can draw and use canvas to their liking. Timeouts are not implemented.</p>
+
+    <hr />
+
+    <p><strong>Checkpoint 2:</strong> <br /> Create user classes and provide database functionality. An affiliated login page/modal will prompt the user to login or create an account before being able to change the canvas (it is still viewable, however). Added complexity on canvas with additional tools such as shape and line creation are apparent.</p>
+
+    <p><strong>Clarification:</strong></p>
+
+    <ul>
+      <li>User accounts are tied to database</li>
+
+      <li>Login modal prompts user to login/create account before being able to make changes to canvas</li>
+
+      <li>Additional canvas features such as lines and shapes can be used to draw</li>
+    </ul>
+
+    <hr />
+
+    <p><strong>Checkpoint 3:</strong> <br /> Timeout functionality is implemented. Users will have a timeout length and id assigned to their accounts, preventing them from making changes to the canvas if a timeout is active. Additionally, users will only be able to draw on the canvas for a certain amount of time before receiving a timeout.</p>
+
+    <p><strong>Clarification:</strong></p>
+
+    <ul>
+      <li>Users can draw for a certain amount of time before receiving a timeout (which is assigned to their account)</li>
+
+      <li>Timeout prevents user from drawing on the canvas</li>
+
+      <li>Canvas is persistent, drawings are now permanent</li>
+    </ul>
+
+    <hr />
+
+    <p><strong>Final Project:</strong> <br /> User can easily log in or create an account in order to start drawing. Canvas is fully operational with useful tools (brush, square, circle, line, etc). User is only able to draw for a defined timespan before receiving a timeout. Canvas is still viewable if the timeout status is currently active; however, changes cannot be made until timeout resolves. Additional features are apparent - user can save an image of the canvas, for example.
+      <strong>Additional features based on proposal feedback:</strong> Canvas supports multiple users, as in multiple users can interact with the canvas at the same time.</p>
+
+    <hr />
+  </div>
+
+  <div id="header">
+    <h1>IST 411 Proposal</h1>
+  </div>
+  <div id="blocktext">
     <center>
       <h2><strong>Description:</strong></h2>
     </center>
