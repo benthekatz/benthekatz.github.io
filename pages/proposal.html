@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="styles/proposal.css">
 
 <head>
-  <title>IST411 Individual Project</title>
+  <title>411 Proposal</title>
   <link rel="icon" href="../images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
 <body>
 
   <div id="header">
-    <h1>IST 411 Checkpoint 1</h1>
+    <h1>IST 411 Checkpoint 2</h1>
     <h3>Benjamin Katz</h3>
   </div>
   <div id="blocktext">
@@ -25,6 +25,47 @@
       </center>
     </div>
 
+    <center><h2 id="ist411checkpoint2">Checkpoint 2</h2></center>
+    <p><strong>✓Checkpoint 2:</strong> 
+      <br /> ✓ User accounts are tied to database 
+      <br /> ✓ Login modal prompts user to login/create account before being able to make changes to canvas 
+      <br /> ✓ Additional canvas features such as lines and shapes can be used to draw</p>
+
+    <p><img src="https://image.ibb.co/gzyywn/db.png" alt="Firebase DB" style="width: 100%;"/> When a user logs in via the Google sign-in button, their profile information is written to the Google Firebase Database.</p>
+
+    <p>Not only is this data persistent, it checks for existing User Ids before writing - thus, only new users are saved to the database. Additionally, if an existing user changes his/her Google account <em>username</em> or <em>profile_picture</em>, these changes will be updated on their next sign-in.</p>
+
+    <hr />
+
+    <p><strong>Checkpoint 3:</strong> <br /> Timeout functionality is implemented. Users will have a timeout length and id assigned to their accounts, preventing them from making changes to the canvas if a timeout is active. Additionally, users will only be able to draw on the canvas for a certain amount of time before receiving a timeout.</p>
+
+    <p><strong>Clarification:</strong></p>
+
+    <ul>
+      <li>Users can draw for a certain amount of time before receiving a timeout (which is assigned to their account)</li>
+
+      <li>Timeout prevents user from drawing on the canvas</li>
+
+      <li>Canvas is persistent, drawings are now permanent</li>
+    </ul>
+
+    <hr />
+
+    <p><strong>Final Project:</strong> <br /> User can easily log in or create an account in order to start drawing. Canvas is fully operational with useful tools (brush, square, circle, line, etc). User is only able to draw for a defined timespan before receiving a timeout. Canvas is still viewable if the timeout status is currently active; however, changes cannot be made until timeout resolves. Additional features are apparent - user can save an image of the canvas, for example.
+      <strong>Additional features based on proposal feedback:</strong> Canvas supports multiple users, as in multiple users can interact with the canvas at the same time.</p>
+
+    <hr />
+
+    <h2 id="completed">Completed:</h2>
+
+    <p><strong>✓ Checkpoint 1:</strong> <br /> ✓ On the homepage, the canvas is fully operational and its features are implemented - user can draw and use canvas to their liking. Timeouts are not implemented.</p>
+
+  </div>
+
+  <div id="header">
+    <h1>Checkpoint 1 (Tag <a href="https://github.com/benthekatz/IST411-Individual-Project/releases/tag/Checkpoint1">Checkpoint1</a>)</h1>
+  </div>
+  <div id="blocktext">
     <center>
       <h2 id="clarification">Clarification</h2>
     </center>
@@ -82,7 +123,7 @@
   </div>
 
   <div id="header">
-    <h1>IST 411 Proposal</h1>
+    <h1>IST 411 Proposal (Tag <a href="https://github.com/benthekatz/IST411-Individual-Project/releases/tag/proposal">proposal</a>)</h1>
   </div>
   <div id="blocktext">
     <center>
