@@ -11,7 +11,7 @@
 <body>
 
   <div id="header">
-    <h1>IST 411 Checkpoint 2</h1>
+    <h1>IST 411 Checkpoint 3</h1>
     <h3>Benjamin Katz</h3>
   </div>
   <div id="blocktext">
@@ -25,13 +25,40 @@
       </center>
     </div>
 
-    <center><h2 id="ist411checkpoint2">Checkpoint 2</h2></center>
-    <p><strong>✓Checkpoint 2:</strong> 
-      <br /> ✓ User accounts are tied to database 
-      <br /> ✓ Login modal prompts user to login/create account before being able to make changes to canvas 
+    <center>
+      <h2 id="projectplan">Project Plan</h2>
+    </center>
+
+    <p><strong>✓Checkpoint 3:</strong> <br />✓ Users can draw for a certain amount of time before receiving a timeout (which is assigned to their account) <br />✓ Timeout prevents user from drawing on the canvas<br /> ✓ Canvas is persistent, drawings are now permanent</p>
+
+    <p>Timeouts are handled via Firebase, and is tied to each user. It is in this manner that timeouts delivered are persistent; meaning, if a user were to close the browser during a timeout, they would have to wait for it to finish on their next Google sign-in.</p>
+
+    <center>
+      <h2 id="nextsteps">Next Steps</h2>
+    </center>
+
+    <p><strong>Final Project:</strong> <br /> User can easily log in or create an account in order to start drawing. Canvas is fully operational with useful tools (brush, square, circle, line, etc). User is only able to draw for a defined timespan before receiving a timeout. Canvas is still viewable if the timeout status is currently active; however, changes cannot be made until timeout resolves. Additional features are apparent - user can save an image of the canvas, for example.<br />
+      <strong>Additional features based on proposal feedback:</strong> Canvas supports multiple users, as in multiple users can interact with the canvas at the same time.</p>
+
+    <center>
+      <h2 id="completed">Completed:</h2>
+    </center>
+
+    <p><strong>✓ Checkpoint 1:</strong> <br /> ✓ On the homepage, the canvas is fully operational and its features are implemented - user can draw and use canvas to their liking. Timeouts are not implemented.</p>
+
+    <p><strong>✓Checkpoint 2:</strong> <br /> ✓ User accounts are tied to database ✓ Login modal prompts user to login/create account before being able to make changes to canvas ✓ Additional canvas features such as lines and shapes can be used to draw</p>
+  </div>
+  
+  <div id="header">
+    <h2>Checkpoint 2 (Tag <a href="https://github.com/benthekatz/IST411-Individual-Project/releases/tag/Checkpoint2">Checkpoint2</a>)</h2>
+  </div>
+  <div id="blocktext">
+    <p><strong>✓Checkpoint 2:</strong>
+      <br /> ✓ User accounts are tied to database
+      <br /> ✓ Login modal prompts user to login/create account before being able to make changes to canvas
       <br /> ✓ Additional canvas features such as lines and shapes can be used to draw</p>
 
-    <p><img src="https://image.ibb.co/gzyywn/db.png" alt="Firebase DB" style="width: 100%;"/> When a user logs in via the Google sign-in button, their profile information is written to the Google Firebase Database.</p>
+    <p><img src="https://image.ibb.co/gzyywn/db.png" alt="Firebase DB" style="width: 100%;" /> When a user logs in via the Google sign-in button, their profile information is written to the Google Firebase Database.</p>
 
     <p>Not only is this data persistent, it checks for existing User Ids before writing - thus, only new users are saved to the database. Additionally, if an existing user changes his/her Google account <em>username</em> or <em>profile_picture</em>, these changes will be updated on their next sign-in.</p>
 
@@ -59,11 +86,10 @@
     <h2 id="completed">Completed:</h2>
 
     <p><strong>✓ Checkpoint 1:</strong> <br /> ✓ On the homepage, the canvas is fully operational and its features are implemented - user can draw and use canvas to their liking. Timeouts are not implemented.</p>
-
   </div>
 
   <div id="header">
-    <h1>Checkpoint 1 (Tag <a href="https://github.com/benthekatz/IST411-Individual-Project/releases/tag/Checkpoint1">Checkpoint1</a>)</h1>
+    <h2>Checkpoint 1 (Tag <a href="https://github.com/benthekatz/IST411-Individual-Project/releases/tag/Checkpoint1">Checkpoint1</a>)</h2>
   </div>
   <div id="blocktext">
     <center>
@@ -123,7 +149,7 @@
   </div>
 
   <div id="header">
-    <h1>IST 411 Proposal (Tag <a href="https://github.com/benthekatz/IST411-Individual-Project/releases/tag/proposal">proposal</a>)</h1>
+    <h2>IST 411 Proposal (Tag <a href="https://github.com/benthekatz/IST411-Individual-Project/releases/tag/proposal">proposal</a>)</h2>
   </div>
   <div id="blocktext">
     <center>
@@ -184,6 +210,7 @@
     <p><span style="font-weight: 400;">The purpose of such a project would be to showcase a piece of artwork that is continuously evolving. It would be fascinating to observe a collection of contributions from multiple users and the interactions within - protecting your artwork if it has been tampered with, and expanding your own artwork, consuming others&rsquo; in the process if you so choose.</span></p>
     <p><span style="font-weight: 400;">While brainstorming individual project ideas earlier in the semester, the basic canvas idea intrigued me. However, I wanted to take this idea a step further and create a playground where each contribution left a lasting mark. I honestly believe this will be a great way of showcasing my abilities, particularly by using my experience in front-end web development. As a design-oriented programmer, this canvas project would be a great way of demonstrating artistic expression within an intuitive and responsive final project. </span></p>
   </div>
+
 </body>
 
 </html>
