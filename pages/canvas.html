@@ -48,12 +48,13 @@
                         <option value="5">3</option>
                         <option value="7">4</option>
                     </select>
+                    <a id="download" download="canvas.png"><button class="btn btn-dark navbar-btn" onclick="saveImage()"><i class="fa fa-save"></i></button></a>
                     <a id="account-btn" class="g-signin2" data-onsuccess="onSignIn"></a>
                     <a id="account-btn" class="btn btn-default navbar-btn pull-right" onclick="signOut();">Sign Out</a>
                 </nav>
             </div>
             <div id="paint">
-                <canvas id="canvas"></canvas>
+                <canvas id="canvas">Your browser does not support Canvas.</canvas>
             </div>
         </div>
         <center><div id="drawingTimer" style="display: none">Drawing Timer: <span id="timer"></span></div></center>
@@ -66,7 +67,7 @@
                 <p id="error" style="color: red; display: none;">Error Signing In</p>
             </div>
         </div>
-
+        
         <div id="timeoutModal" class="modal">
             <div class="modal-content">
                 <div id="timeoutTimer">

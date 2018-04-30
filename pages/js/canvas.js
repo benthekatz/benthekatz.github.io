@@ -112,6 +112,14 @@ function doPaint(x, y, isPaint) {
 function updateColor(jscolor) {
     canvas_context.strokeStyle = '#' + jscolor;
     canvas_context.fillStyle = '#' + jscolor;
-    hex = jscolor.toHEXString();
+    hex = '#' + jscolor;
+}
+
+function saveImage() {
+    var canvas = document.getElementById("canvas");
+    var download = document.getElementById("download");
+    
+    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    download.setAttribute("href", image);
 }
 

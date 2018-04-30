@@ -76,21 +76,33 @@ function onSignIn(googleUser) {
 
     var userId = profile.getId();
     var ref = firebase.database().ref("users/" + userId);
-    var timeout;
     ref.once("value", function (snapshot) {
-        timeout = snapshot.child("timeout_active").val();
-        if (timeout === true) {
+        if (!snapshot.hasChild("timeout_active")) {
+            unlock(userId);
+            timeoutStatus = false;
+            ref.update({
+                timeout_active: false
+            });
+        } else if (snapshot.child("timeout_active").val()) {
             lock(userId);
             timeoutStatus = true;
+            ref.update({
+                timeout_active: true
+            });
         } else {
             unlock(userId);
             timeoutStatus = false;
+            ref.update({
+                timeout_active: false
+            });
         }
+        
+        writeUserData(profile.getId(), profile.getName(), profile.getEmail(), profile.getImageUrl(), timeoutStatus);
     }, function (error) {
         console.log("Error: " + error.code);
     });
 
-    writeUserData(profile.getId(), profile.getName(), profile.getEmail(), profile.getImageUrl(), timeoutStatus);
+    
 }
 
 var interval = 60000;
@@ -133,7 +145,7 @@ function lock(userId) {
 
     if (loginStatus) {
         timeoutModal.style.display = "block";
-        
+
         timeoutTimer.start({countdown: true, startValues: {seconds: 60}});
         $('#timeoutTimer .values').html("You can draw in: " + timeoutTimer.getTimeValues().toString());
         timeoutTimer.addEventListener('secondsUpdated', function (e) {
@@ -287,6 +299,9 @@ function gotData(data) {
             var color = drawings[k].color;
             var width = drawings[k].width;
             var points = drawings[k].points;
+            if (color === null || color === undefined) {
+                color = "#000000"
+            }
 
             renderDrawings(tool, color, width, points);
         }
