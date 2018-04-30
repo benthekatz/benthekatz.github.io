@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>411 Canvas</title>
+
+        <!-- Internal -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Bootstrap v4.0 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+        <meta name="google-signin-client_id" content="414455299180-fk4c9c0glkv9d4g2r9i8k6aaquc04v6h.apps.googleusercontent.com">
+    </head>
+
+    <body onload="init()" onunload="updateColor(jscolor)" onresize="init()">
+
+
+        <div id="title">
+
+        </div>
+        <div id="canvas-container">
+            <div id="toolbar">
+                <nav class="navbar-dark bg-dark">
+                    <div class="btn-group btn-group-toggle pull-left" data-toggle="buttons" id="buttons">
+                        <label class="btn btn-secondary btn-dark navbar-btn active">
+                            <input type="radio" name="tools" autocomplete="off" id="brush" checked><i class="fa fa-paint-brush"></i>
+                        </label>
+                        <label class="btn btn-secondary btn-dark navbar-btn">
+                            <input type="radio" name="tools" autocomplete="off" id="rect"><i class="fa fa-square"></i>
+                        </label>
+                        <label class="btn btn-secondary btn-dark navbar-btn">
+                            <input type="radio" name="tools" autocomplete="off" id="circle"><i class="fa fa-circle"></i>
+                        </label>
+                        <label class="btn btn-secondary btn-dark navbar-btn">
+                            <input type="radio" name="tools" autocomplete="off" id="line" onclick="init()"><i class="fa fa-arrows-alt-h"></i>
+                        </label>
+                    </div>
+                    <input class="jscolor" onchange="updateColor(this.jscolor);" value="000000">
+                    <select id="select-width">
+                        <option value="" disabled selected>Line Width</option>
+                        <option value="1">1</option>
+                        <option value="3">2</option>
+                        <option value="5">3</option>
+                        <option value="7">4</option>
+                    </select>
+                    <a id="account-btn" class="g-signin2" data-onsuccess="onSignIn"></a>
+                    <a id="account-btn" class="btn btn-default navbar-btn pull-right" onclick="signOut();">Sign Out</a>
+                </nav>
+            </div>
+            <div id="paint">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+        <center><div id="drawingTimer" style="display: none">Drawing Timer: <span id="timer"></span></div></center>
+
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <br /><p>You Must Sign In to use the Canvas</p>
+                <div class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onFailure" data-toggle="collapse"></div>
+                <p id="error" style="color: red; display: none;">Error Signing In</p>
+            </div>
+        </div>
+
+        <div id="timeoutModal" class="modal">
+            <div class="modal-content">
+                <div id="timeoutTimer">
+                    <center><div class="values"></div></center>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script>
+                        // Initialize Firebase
+                        var config = {
+                            apiKey: "AIzaSyDTvqRlWJDmBnuVg2cPbhWz5SoN2KzWDTM",
+                            authDomain: "generative-canvas-411.firebaseapp.com",
+                            databaseURL: "https://generative-canvas-411.firebaseio.com",
+                            projectId: "generative-canvas-411",
+                            storageBucket: "generative-canvas-411.appspot.com",
+                            messagingSenderId: "414455299180"
+                        };
+                        firebase.initializeApp(config);
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/easytimer.min.js"></script>
+        <script src="js/jscolor.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="js/login.js"></script>
+
+        <!-- Google Sign-In -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!-- Bootstrap v4.0 -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
