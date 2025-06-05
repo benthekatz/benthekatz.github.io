@@ -301,30 +301,15 @@ function Window({
       case "resume":
         return (
           <div className="p-4 space-y-4">
-            <h2 className="text-lg font-bold">Resume</h2>
             <div className="space-y-4">
-              <h3 className="font-bold">Click to download</h3>
-              <iframe src="/files/Resume_Benjamin_Katz.pdf" width="100%" height="500px"/>
-              {/*<div>*/}
-              {/*  <h3 className="font-bold">Click to download</h3>*/}
-              {/*  <div className="mt-2 space-y-2">*/}
-              {/*    <div className="border border-gray-400 p-2">*/}
-              {/*      <div className="font-bold text-sm">Senior Developer</div>*/}
-              {/*      <div className="text-sm">Tech Company • 2022-Present</div>*/}
-              {/*    </div>*/}
-              {/*    <div className="border border-gray-400 p-2">*/}
-              {/*      <div className="font-bold text-sm">Full Stack Developer</div>*/}
-              {/*      <div className="text-sm">Startup Inc • 2020-2022</div>*/}
-              {/*    </div>*/}
-              {/*  </div>*/}
-              {/*</div>*/}
-              {/*<div>*/}
-              {/*  <h3 className="font-bold">Education</h3>*/}
-              {/*  <div className="mt-2 border border-gray-400 p-2">*/}
-              {/*    <div className="font-bold text-sm">Computer Science Degree</div>*/}
-              {/*    <div className="text-sm">University • 2016-2020</div>*/}
-              {/*  </div>*/}
-              {/*</div>*/}
+              <span>
+              <h3 className="font-bold border border-gray-400">
+                📄
+                <a href="/files/Resume_Benjamin_Katz.pdf" target="_blank" title="Click to view.">
+                  Resume_Benjamin_Katz.pdf
+                </a>
+              </h3>
+              </span>
             </div>
           </div>
         )
