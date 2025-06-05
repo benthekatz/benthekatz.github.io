@@ -430,7 +430,7 @@ function StartMenu({
   return (
     <div
       ref={menuRef}
-      className="fixed bottom-0 left-0 bg-gray-200 border-2 border-gray-400 shadow-lg z-50 w-48"
+      className="fixed bottom-10 left-0 bg-gray-200 border-2 border-gray-400 shadow-lg z-50 w-48"
       style={{ borderStyle: "outset" }}
     >
       {/* Start Menu Header */}
