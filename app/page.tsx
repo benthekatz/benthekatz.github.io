@@ -266,7 +266,7 @@ function Window({
               <div className="flex items-center gap-2">
                 <span>📧</span>
                 <span>
-                  <a href="mailto:benthekatz@gmail.com">
+                  <a href="mailto:benthekatz@gmail.com" target="_blank">
                     benthekatz@gmail.com
                   </a>
                 </span>
@@ -274,7 +274,7 @@ function Window({
               <div className="flex items-center gap-2">
                 <span>🐙</span>
                 <span>
-                  <a href="https://github.com/benthekatz/">
+                  <a href="https://github.com/benthekatz/" target="_blank">
                     https://github.com/benthekatz/
                   </a>
                 </span>
@@ -282,7 +282,7 @@ function Window({
               <div className="flex items-center gap-2">
                 <span>💼</span>
                 <span>
-                  <a href="https://www.linkedin.com/in/benthekatz/">
+                  <a href="https://www.linkedin.com/in/benthekatz/" target="_blank">
                     https://www.linkedin.com/in/benthekatz/
                   </a>
                 </span>
@@ -290,7 +290,7 @@ function Window({
               <div className="flex items-center gap-2">
                 <span>📷</span>
                 <span>
-                  <a href="https://www.instagram.com/yung_deaf/">
+                  <a href="https://www.instagram.com/yung_deaf/" target="_blank">
                     @yung_deaf
                   </a>
                 </span>
