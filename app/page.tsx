@@ -305,7 +305,7 @@ function Window({
               <span>
               <h3 className="font-bold border border-gray-400">
                 📄
-                <a href="/files/Resume_Benjamin_Katz.pdf" target="_blank" title="Click to view.">
+                <a href="https://docs.google.com/document/d/13fykMNeb1CF0cepSZgjiIkLMAZlcgf2x-6-q3WVF42M/export?format=pdf" target="_blank" title="Resume_Benjamin_Katz.pdf">
                   Resume_Benjamin_Katz.pdf
                 </a>
               </h3>
